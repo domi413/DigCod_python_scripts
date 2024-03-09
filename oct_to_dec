@@ -27,19 +27,20 @@ from ti_system import *
 
 # Functions
 def oct_to_dec(oct_str):
-    return int(oct_str, 8)
+	return int(oct_str, 8)
 
 
 # Main
+valid_input = ""
 while True:
-    clear_history()
+	clear_history()
 
-    # not checking numbers > 7 yet, but this code isn't made for retards
-    input_str = input("Enter an octal number: ")
-    if not input_str.isdigit():
-        continue
+	input_str = input("Enter " + valid_input + " octal number: ")
+	if not (input_str.isdigit() and all(char in '01234567' for char in input_str)):
+		valid_input = "valid"
+		continue
 
-    print("Decimal:", oct_to_dec(input_str))
+	print("Decimal:", oct_to_dec(input_str))
 
-    if input("Rerun code? (y)") != "y":
-        break
+	if input("Rerun code? (y)") != "y":
+		break
