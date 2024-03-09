@@ -42,5 +42,5 @@ while True:
 
 	print("Decimal:", oct_to_dec(input_str))
 
-	if input("Rerun code? (y)") != "y":
+	if input("Rerun code? (y) ").lower() != "y":
 		break
