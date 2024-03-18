@@ -14,9 +14,11 @@ To use these scripts on your TI-Nspire calculator:
 
 ### Alternatively:
 
-1. Open Chrome (it's required to use Chrome for this method).
+1. Open Chrome (it's required to use Chrome for this method).*1
 2. Navigate to [TI-Nspire Navigator](https://nspireconnect.ti.com/nsc/).
 3. Choose the option to transfer files.
+
+*1 -> This method doesn't work on linux, so there is no option to load the files from a linux desktop. (Maybe with a VM?)
 
 ## Running Scripts
 
