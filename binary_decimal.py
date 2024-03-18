@@ -8,17 +8,6 @@
 #
 # press ctrl+r to run the script
 #
-# How to save the script on Handheld:
-# 1. Connect the Handheld to the computer
-# 2. Open the TI-Nspire Students software
-# 3. Create new python script
-# 4. File -> Save to Handheld
-#
-# or another option...
-# 1. open chrome (yeah you must use chrome..)
-# 2. go to https://nspireconnect.ti.com/nsc/
-# 3. -> transfer file
-#
 # -----------------------------------------------------------------------------
 
 # Import libraries
