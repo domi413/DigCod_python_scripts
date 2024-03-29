@@ -26,7 +26,7 @@ valid_input = ""
 while True:
 	clear_history()
 
-	input_str = input("Enter " + valid_input + " decimal number: ")
+	input_str = input("Enter " + valid_input + " binary number: ")
 	if not (input_str.isdigit() and all(char in '01' for char in input_str)):
 		valid_input = "valid"
 		continue
