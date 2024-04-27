@@ -12,13 +12,15 @@ To use these scripts on your TI-Nspire calculator:
 4. Copy and paste the content of each `.py` script into the new Python script you created.
 5. Use the "File -> Save to Handheld" function to transfer the script to your calculator.
 
+Cracked version of Students-software can be found [here](https://filecr.com/windows/ti-nspire-cx-cas-student-software/?id=494300560000).
+
 ### Alternatively:
 
 1. Open Chrome (it's required to use Chrome for this method).*1
 2. Navigate to [TI-Nspire Navigator](https://nspireconnect.ti.com/nsc/).
 3. Choose the option to transfer files.
 
-*1 -> This method doesn't work on linux, so there is no option to load the files from a linux desktop. (Maybe with a VM?)
+*1 -> This method doesn't work for linux. The only option for linux is AFAIK through a VM.
 
 ## Running Scripts
 
