@@ -2,7 +2,7 @@
 
 This repository contains a collection of Python scripts designed for use with the TI-Nspire calculator.
 
-**Note:** You may have to use a TI-nspire CX II, the older version TI-nspire CX may not support python scripts.
+**Note:** You may have to use a TI-nspire CX II, the older version TI-nspire CX may not support python scripts. It requires OS 5.20 or greater, the older TI-nspire CX can only be updated up to version ~ 4.5
 
 ## Usage
 
