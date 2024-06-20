@@ -3,8 +3,6 @@
 # Description: Script to convert a octal number into a decimal
 #
 # Author: Dominik B.
-# Created: 09.03.2024
-# Version: 1.0
 #
 # press ctrl+r to run the script
 #
@@ -12,26 +10,29 @@
 
 # Import libraries
 from math import *
+
 from ti_system import *
 
-# Functions	
+
+# Functions
 def two_complement_to_dec(bin_str):
-	if bin_str[0] == '0':  # positive number
-		return int(bin_str, 2)
-	else:
-		return -((1 << len(bin_str)) - int(bin_str, 2))
+    if bin_str[0] == "0":  # positive number
+        return int(bin_str, 2)
+    return -((1 << len(bin_str)) - int(bin_str, 2))
+
 
 # Main
-valid_input = ""
+VALID_INPUT = ""
 while True:
-	clear_history()
+    clear_history()
 
-	input_str = input("Enter " + valid_input + " binary number: ")
-	if not (input_str.isdigit() and all(char in '01' for char in input_str)):
-		valid_input = "valid"
-		continue
+    input_str = input("Enter " + VALID_INPUT + " binary number: ")
+    if not (input_str.isdigit() and all(char in "01" for char in input_str)):
+        VALID_INPUT = "valid"
+        continue
 
-	print("Decimal:", two_complement_to_dec(input_str))
+    print("Decimal:", two_complement_to_dec(input_str))
 
-	if input("Rerun code? (y) ").lower() != "y":
-		break
+    if input("Rerun code? (y) ").lower() != "y":
+        VALID_INPUT = ""
+        break

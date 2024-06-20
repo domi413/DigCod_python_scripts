@@ -3,8 +3,6 @@
 # Description: Script to convert a octal number into a decimal
 #
 # Author: Dominik B.
-# Created: 09.03.2024
-# Version: 1.0
 #
 # press ctrl+r to run the script
 #
@@ -12,24 +10,27 @@
 
 # Import libraries
 from math import *
+
 from ti_system import *
+
 
 # Functions
 def dec_to_oct(dec_num):
-	return str(oct(int(dec_num))[2:])
+    return str(oct(int(dec_num))[2:])
 
 
 # Main
-valid_input = ""
+VALID_INPUT = ""
 while True:
-	clear_history()
+    clear_history()
 
-	input_str = input("Enter " + valid_input + " decimal number: ")
-	if not input_str.isdigit():
-		valid_input = "valid"
-		continue
+    input_str = input("Enter " + VALID_INPUT + " decimal number: ")
+    if not input_str.isdigit():
+        VALID_INPUT = "valid"
+        continue
 
-	print("Decimal:", dec_to_oct(input_str))
+    print("Decimal:", dec_to_oct(input_str))
 
-	if input("Rerun code? (y) ").lower() != "y":
-		break
+    if input("Rerun code? (y) ").lower() != "y":
+        VALID_INPUT = ""
+        break

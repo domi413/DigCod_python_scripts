@@ -4,8 +4,6 @@
 #               multiplicative inverse
 #
 # Author: Dominik B.
-# Created: 27/04/2024
-# Version: 1.0
 #
 # press ctrl+r to run the script
 #
@@ -92,15 +90,15 @@ def extended_euclidean(a, b):
 
 
 # Main
-valid_input = ""
+VALID_INPUT = ""
 while True:
     clear_history()
 
-    a = int(input("Enter " + valid_input + " number a (greater value): "))
-    b = int(input("Enter " + valid_input + " number b: "))
+    a = int(input("Enter " + VALID_INPUT + " number a (greater value): "))
+    b = int(input("Enter " + VALID_INPUT + " number b: "))
 
     if b > a:
-        valid_input = "valid"
+        VALID_INPUT = "valid"
         continue
 
     inverse = extended_euclidean(a, b) % a
@@ -118,4 +116,5 @@ while True:
         extended_euclidean_table_print(a, b)
 
     if input("Rerun code? (y) ").lower() != "y":
+        VALID_INPUT = ""
         break
