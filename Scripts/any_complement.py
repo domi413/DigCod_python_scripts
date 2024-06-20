@@ -12,6 +12,8 @@
 # Import libraries
 from math import ceil, log
 
+from ti_system import *
+
 
 # Functions
 def is_valid_number(number, base):
@@ -55,7 +57,7 @@ def convert_base(number, from_base, to_base):
 # Main
 VALID_INPUT = ""
 while True:
-    # clear_history()
+    clear_history()
 
     inp_val = input("Enter " + VALID_INPUT + " number: ")
     inp_type = input("Enter " + VALID_INPUT + " complement of this number: ")
