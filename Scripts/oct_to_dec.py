@@ -29,7 +29,7 @@ while True:
         VALID_INPUT = "valid"
         continue
 
-    print("Decimal:", oct_to_dec(input_str))
+    print("Octal:", oct_to_dec(input_str))
 
     if input("Rerun code? (y) ").lower() != "y":
         VALID_INPUT = ""
