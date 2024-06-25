@@ -31,3 +31,9 @@ To execute a script on the TI-Nspire:
 1. Navigate to the script on your handheld.
 2. Press `ctrl+r` to run the script.
 3. Follow the on-screen prompts to input numbers and observe the output.
+
+## TODO
+
+- [ ] Implement an option to abort the running script e.g. with `ctrl+c`
+- [ ] Make the main-loops consistent, so every script has the same structure
+- [ ] Rewrite the scripts in Lua, so they can also be used on the older CX-Version
