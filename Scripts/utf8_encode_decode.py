@@ -9,7 +9,7 @@
 
 
 # Import libraries
-# from ti_system import *
+from ti_system import *
 
 
 # Functions
@@ -59,7 +59,7 @@ def decode_utf8(bytes_array):
 # Main
 VALID_INPUT = True
 while True:
-    # clear_history()
+    clear_history()
 
     if not VALID_INPUT:
         print("Enter valid input..")
@@ -82,7 +82,7 @@ while True:
         if not all(
             byte.isdigit() and all(c in "01" for c in byte) for byte in byte_str.split()
         ):
-            VALID_INPUT = True
+            VALID_INPUT = False
             continue
 
         bytes_list = [int(b, 2) for b in byte_str.split()]
@@ -92,6 +92,6 @@ while True:
         VALID_INPUT = False
         continue
 
-    if input("Try again? (y/n): ").lower() != "y":
+    if input("Rerun code? (y) ").lower() != "y":
         break
     VALID_INPUT = True
