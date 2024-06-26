@@ -10,8 +10,6 @@
 # -----------------------------------------------------------------------------
 
 # Import libraries
-from math import ceil, log
-
 from ti_system import *
 
 

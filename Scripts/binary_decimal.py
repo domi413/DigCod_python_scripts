@@ -84,3 +84,4 @@ while True:
 
     if input("Rerun code? (y) ").lower() != "y":
         break
+    VALID_INPUT = ""
