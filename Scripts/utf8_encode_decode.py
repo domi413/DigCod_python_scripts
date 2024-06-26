@@ -71,10 +71,9 @@ while True:
         print("Encoded bytes:", ["{0:08b}".format(byte) for byte in encoded])
     elif action.lower() == "d":
         print("You can only input bytes for a single character")
-        try:
-            byte_str = input("Enter bytes to decode (space-separated, binary): ")
-        except ValueError:
-            VALID_INPUT = False
+        byte_str = input("Enter bytes to decode (space-separated, binary): ")
+
+        if not (byte_str.isdigit() and all(char in "01" for char in byte_str)):
             continue
 
         bytes_list = [int(b, 2) for b in byte_str.split()]
