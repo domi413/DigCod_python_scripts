@@ -8,6 +8,10 @@
 # -----------------------------------------------------------------------------
 
 
+# Import libraries
+from ti_system import *
+
+
 # Functions
 def encode_utf8(char):
     """Encode a single character to UTF-8."""
@@ -55,7 +59,7 @@ def decode_utf8(bytes_array):
 # Main
 VALID_INPUT = True
 while True:
-    # clear_history()
+    clear_history()
 
     if not VALID_INPUT:
         print("Enter valid input..")
