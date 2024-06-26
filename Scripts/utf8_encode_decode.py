@@ -9,7 +9,7 @@
 
 
 # Import libraries
-from ti_system import *
+# from ti_system import *
 
 
 # Functions
@@ -59,7 +59,7 @@ def decode_utf8(bytes_array):
 # Main
 VALID_INPUT = True
 while True:
-    clear_history()
+    # clear_history()
 
     if not VALID_INPUT:
         print("Enter valid input..")
@@ -75,9 +75,14 @@ while True:
         print("Encoded bytes:", ["{0:08b}".format(byte) for byte in encoded])
     elif action.lower() == "d":
         print("You can only input bytes for a single character")
-        byte_str = input("Enter bytes to decode (space-separated, binary): ")
+        print("Enter bytes to decode (space-separated)")
+        print("E.g. (11000011 10101001)")
+        byte_str = input("bytes: ")
 
-        if not (byte_str.isdigit() and all(char in "01" for char in byte_str)):
+        if not all(
+            byte.isdigit() and all(c in "01" for c in byte) for byte in byte_str.split()
+        ):
+            VALID_INPUT = True
             continue
 
         bytes_list = [int(b, 2) for b in byte_str.split()]
