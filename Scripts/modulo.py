@@ -16,12 +16,10 @@ from ti_system import *
 def evaluate_expression(expression):
     """Evaluate the expression where ** is used for exponentiation."""
     if "**" in expression:
-        # Replace '**' with '^' for display purposes only.
         display_expr = expression.replace("**", "^")
     else:
         display_expr = expression
     try:
-        # Safely evaluate the expression with exponentiation.
         result = eval(expression)
         return result, display_expr
     except Exception:
@@ -38,7 +36,7 @@ VALID_INPUT = ""
 while True:
     clear_history()
 
-    print("Use ** for x^n e.g. 4**3 = 4^3")
+    print("You can use ** for x^n e.g. 4**3 = 4^3")
     input_num1_str = input(VALID_INPUT + "first number: ")
     evaluated_num1, display_num1 = evaluate_expression(input_num1_str)
     if evaluated_num1 is None:
@@ -52,7 +50,7 @@ while True:
         continue
 
     result = calculate_modulo(evaluated_num1, evaluated_num2)
-    print(f"{display_num1} % {display_num2} = {result}")
+    print(input_num1_str + " % " + input_num2_str + " = " + str(result))
 
     if input("Rerun code? (y) ").lower() != "y":
         VALID_INPUT = ""
