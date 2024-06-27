@@ -9,7 +9,7 @@
 # -----------------------------------------------------------------------------
 
 # Import necessary libraries
-# from ti_system import *
+from ti_system import *
 
 
 # Functions
@@ -36,7 +36,7 @@ def calculate_modulo(num1, num2):
 # Main
 VALID_INPUT = ""
 while True:
-    # clear_history()
+    clear_history()
 
     print("Use ** for x^n e.g. 4**3 = 4^3")
     input_num1_str = input(VALID_INPUT + "first number: ")
