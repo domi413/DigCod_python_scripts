@@ -50,8 +50,8 @@ def extended_euclidean_table_print(a, b):
 
     # Print table
 
-    print("_________________________")
-    print("i   a   b   q   r   x   y")
+    print("__________________________")
+    print("i     a     b     q     r     x     y")
     for i, row in enumerate(table, 1):
         print(
             "{:<5}{:<7}{:<7}{:<7}{:<7}{:<7}{:<7}".format(

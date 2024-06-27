@@ -26,7 +26,7 @@ def encode_utf8(char):
             0b10000000 | ((code_point >> 6) & 0b00111111),
             0b10000000 | (code_point & 0b00111111),
         ]
-    return [
+    return [  # 4-byte characters
         0b11110000 | (code_point >> 18),
         0b10000000 | ((code_point >> 12) & 0b00111111),
         0b10000000 | ((code_point >> 6) & 0b00111111),
