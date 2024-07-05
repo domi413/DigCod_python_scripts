@@ -41,7 +41,7 @@ To execute a script on the TI-Nspire:
 - [ ] Implement an option to abort the running script e.g. with `ctrl+c`
 - [ ] Make the main-loops consistent, so every script has the same structure
 - [ ] Rewrite the scripts in Lua, so they can also be used on the older CX-Version
-- [ ] Would be cool if all scripts are combined in a single script. E.g. a menu in which you can select a script and a script and if the script has run through, you jump back to the menu.
+- [ ] Would be cool if all scripts are combined in a single script. E.g. a menu in which you can select a script and if the script has run through, you jump back to the menu.
 
 ### Additional scripts TODO
 
