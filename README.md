@@ -2,7 +2,7 @@
 
 This repository contains a collection of Python scripts designed for use with the TI-Nspire calculator.
 
-**Note:** You may have to use a TI-nspire CX II, the older version TI-nspire CX may not support python scripts. It requires OS 5.20 or greater, the older TI-nspire CX can only be updated up to version ~ 4.5
+**Note:** You may have to use a TI-nspire CX II, the older version TI-nspire CX may not support python scripts. It requires OS 5.20 or greater, the older TI-nspire CX can only be updated up to version ~ 4.5. You might take a look at [Ndless](https://ndless.me/)
 
 The reason I don't upload these scripts to the _Studentenportal_ is that they are likely to be removed. The _Studentenportal_ is monitored by lecturers who delete not allowed stuff. These scripts aren't currently illegal, but they could become because they make the exam much easier.
 
